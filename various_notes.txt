@@ -6,7 +6,6 @@ type essences:
 "E10"
 "SP98"
 
-
 Calcul de la marge brute de raffinage sur Brent:
 2015 a mai 2025 (mois par mois):
 https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
@@ -21,7 +20,6 @@ https://www.clcv.org/storage/app/media/Dossier%20carburant%20CLCV.pdf
 https://www.economie.gouv.fr/files/20120828_prix_marges_carburants_dans_la_distribution.pdf
 https://www.economie.gouv.fr/files/directions_services/dgccrf/concurrence/prix/mensuel_2012/OPM_petrole_mars12.pdf
 )
-
 
 graphique prix HTT et TTC
 de 1985 a aujourd'hui (semaine par semaine))
