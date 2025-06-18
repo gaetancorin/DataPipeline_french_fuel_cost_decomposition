@@ -1,0 +1,70 @@
+This is original used datasources and what is used for:
+
+1_load_eur_gas_station_price_xml_to_csv
+website: https://www.prix-carburants.gouv.fr/rubrique/opendata/
+datasources: https://donnees.roulez-eco.fr/opendata/annee/{year}"
+(Insert a year between 2007 and today)
+datasources functions: prices of multiple gas for all gas-station of France.
+Purpose: Provides prices for multiple fuel types for all gas stations in France.
+
+2_transform_csv_ZSCORE_values_and_last
+No external data sources used
+Purpose: Get the precedent datas, and Applies data transformations such as Z-score normalization and keep only the most recent values for each day and for each gas-station.
+
+3_load_csv_to_mongodb
+No external data sources used
+Purpose: Store precedent CSV datas into MongoDB.
+
+4_load_EUR_USD_stockmarket_to_mongo
+datasources: Library yfinance ticker "EURUSD=X"
+datasources functions: prices of EUR_USD stockmarket close.
+Purpose: Fetches closing prices for the EUR/USD exchange rate and store in Mongo
+
+5_load_BRENT_USD-EUR_stockmarket_to_mongo
+datasources: Library yfinance ticker "BZ=F"
+datasources functions: prices of BRENT_USD stockmarket close
+Purpose: Fetches closing prices for Brent crude oil (USD), create BRENT_EUR and BRENT_EUR_LITER and store all in Mongo
+
+6_create_table_gas_station_TTC_gas_eur_liter
+No external data sources used
+Purpose: Clean historical gas station price data using Z-score normalization.
+Then, for each fuel type and each day, compute a single average price by aggregating prices from all gas stations.
+Finally, store the results in MongoDB.
+
+7_create_table_refining_margin_brent
+website: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+datasources: https://www.ecologie.gouv.fr/sites/default/files/documents/Historique%20de%20la%20marge%20brute%20de%20raffinage%20sur%20Brent%20depuis%202015%20%28moyennes%20mensuelles%29_1.xlsx
+datasources functions: refining margin brent, , monthly since 2015.
+Purpose: Get the refining margin brent, get the eur_usd mongo collection, transform usd value to euro and store in mongo
+
+8_create_table_HTT_gas_eur_liter_and_TTC_gas_eur_liter
+website: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+datasources(xml): https://www.ecologie.gouv.fr/simulator-energies/monitoring/export/59707a7b55c0012d0efade376d62a56d3c86129a
+datasources functions: HTT gas prices and TTC gas prices, weekly since 1985
+Purpose: Get  HTT gas prices and TTC gas prices(for gazole, sp95 and e10), weekly since 1985 and store to mongo
+
+9_create_table_calculated_transportation_fees_eur_liter
+No external data sources used
+explanation:
+* HTT_gas_eur_liter = Brent_eur_liter + refining_margin_brent_eur_liter + transportation_fees_eur_liter
+so 
+* transportation_fees = gas_HTT_liter - ( Brent_eur_liter + refining_margin_brent_eur_liter )
+Purpose: Get on mongo collection for: HTT_gas_eur_liter, Brent_eur_liter, refining_margin_brent_eur_liter. And try to calculate transportation fees by calculing (for gazole, sp95 ans e10).
+store calculate transportation fees on mongo
+
+9.5_create_table_real_transportation_fees_eur_liter
+website: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+datasources(html): https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+datasources functions: Official transportation fees, by year since 2015. Current year is not available.
+Purpose: Get Official transportation fees by year, and store to mongo for comparaison with calculated transportation fees
+
+10_create_table_gas_taxes_and_table_all_segments_for_ttc_gas
+No external data sources used
+explanation:
+TTC_gas_eur_liter = Brent_eur_liter + refining_margin_brent_eur_liter + transportation_fees_eur_liter + gas_taxes
+so
+gas_taxes = TTC_gas_eur_liter - ( Brent_eur_liter + refining_margin_brent_eur_liter + transportation_fees_eur_liter )
+Purpose: load all mongo collection, and do calculation for gas_taxes (for gazole, sp95 and e10)
+Store gas_taxes on mongo
+After that, create an easy to used collection with all precedent collections with gas_taxes for recreate all gas_decomposition in dataviz. Store this in mongo
+
