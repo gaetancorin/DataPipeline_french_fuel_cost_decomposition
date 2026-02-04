@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.0">
+  <diagram name="Page-1" id="99-5pspxVMlEHVSiMM08">
+    <mxGraphModel dx="983" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-2" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" value="" vertex="1">
+          <mxGeometry height="272.5" width="30" x="205" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Brent + Marge Brut Raffinage&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="330" x="50" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;+ Frais de Transport&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="348" y="427" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Cotation Rotterdam&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="110" y="369" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-6" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" value="" vertex="1">
+          <mxGeometry height="472.5" width="30" x="305" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Prix Gasoil HTT&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="216" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;+ Taxes et Impositions&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="560" y="427" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-9" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" value="" vertex="1">
+          <mxGeometry height="692.5" width="30" x="413" y="-28" as="geometry" />
+        </mxCell>
+        <mxCell id="EKSOzK7hHOYAcH1AHguR-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Prix Gasoil TTC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="320" y="278" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

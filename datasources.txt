@@ -1,0 +1,17 @@
+DATASOURCE eur_usd:
+Yfinance (EURUSD=X)
+
+DATASOURCE BRENT eur_liter:
+Yfinance (BZ=F)
+
+DATASOURCE REFINED MARGIN BRENT eur_liter:
+site: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+dataset: https://www.ecologie.gouv.fr/sites/default/files/documents/Historique%20de%20la%20marge%20brute%20de%20raffinage%20sur%20Brent%20depuis%202015%20%28moyennes%20mensuelles%29.xlsx
+
+DATASOURCE GAZOLE HTT and TTC eur_liter:
+site: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+dataset: using bot for formulary who give download url
+
+DATASOURCE TRANSPORTATION FEES eur_liter:
+site: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+dataset: web scrapping
