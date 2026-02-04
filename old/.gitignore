@@ -1,5 +1,0 @@
-**/.ipynb_checkpoints
-**/results/
-**/.env
-**/env.txt
-#**/test_dump_file_on_s3.ipynb

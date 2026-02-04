@@ -15,3 +15,9 @@ dataset: using bot for formulary who give download url
 DATASOURCE TRANSPORTATION FEES eur_liter:
 site: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
 dataset: web scrapping
+
+
+DATASOURCE Business explanation of diesel price components by segment:
+site: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
+download link on "Télécharger Cours, prix et marges des produits pétroliers en France & UE - NPG.pdf"
+(or go to ./documentation/assets/explication_metier_composition_gasoil.pdf)
