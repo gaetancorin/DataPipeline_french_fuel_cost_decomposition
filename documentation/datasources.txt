@@ -20,4 +20,4 @@ dataset: web scrapping
 DATASOURCE Business explanation of diesel price components by segment:
 site: https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers
 download link on "Télécharger Cours, prix et marges des produits pétroliers en France & UE - NPG.pdf"
-(or go to ./documentation/assets/explication_metier_composition_gasoil.pdf)
+(or go to ./documentation/assets/business_explanation_gazole_composition.pdf)
