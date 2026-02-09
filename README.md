@@ -37,4 +37,4 @@ https://www.ecologie.gouv.fr/politiques-publiques/prix-produits-petroliers (usin
 3. **Retrieve the Refined Margin Brent (USD/barrel)**, convert it to EUR/liter using the EUR/USD rate, and save it as a CSV.  
 4. Use a Python bot (Selenium) to fill a web form, retrieve a download link, and download the **Gazole price datasets (HTT and TTC)**. Merge the two datasets, convert French date formats to Datetime, and save as CSV.  
 5. Use a Python bot (Selenium) to **web scrape the annual transportation fees** (in euro cents per liter). Convert the dataset to monthly values in euros per liter, and save as CSV.  
-6. Combine all datasets into a single table (Brent price / Refining Margin / Gazole HTT and TTC prices / transportation fees). Use this unified table for visualization into a Stacked Area Chart (from 2015 to present).
+6. **Combine all datasets into a single table** (Brent price / Refining Margin / Gazole HTT and TTC prices / transportation fees). **Use this unified table for visualization** into a Stacked Area Chart (from 2015 to present).
